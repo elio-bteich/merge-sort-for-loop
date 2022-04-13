@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const size_t N = 5;
+const size_t N = 5; // Change the value of N with the size of the array you want to manipulate
 
 void merge(int arr[], size_t l, size_t m, size_t r) {
     size_t i, j, temp_arr_size;
