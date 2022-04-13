@@ -33,9 +33,10 @@ void merge(int arr[], size_t l, size_t m, size_t r) {
     }
 }
 
-void mergeSort(int arr[], int l, int r) {
-    size_t m = (l+r)/2;
+void mergeSort(int arr[], size_t l, size_t r) {
+    size_t m;
     if (l < r) {
+        m = (l+r)/2;
         mergeSort(arr, l, m);
         mergeSort(arr, m+1, r);
         merge(arr, l, m, r);
